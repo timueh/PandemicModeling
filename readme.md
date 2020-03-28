@@ -8,6 +8,18 @@ As with every mathematical model there are parameters that need to be chosen.
 Usually, not precise figures exist.
 Hence, uncertainty quantification can play a vital role.
 
-This repository contains Julia code and a [documentation](doc/doc.pdf) to show how [polynomial chaos expansion](https://en.wikipedia.org/wiki/Polynomial_chaos) can help quantify uncertainties for the SEIR model.
+The basic equations for the SEIR model are ([see for example this excellent reference](https://gabgoh.github.io/COVID/index.html))
 
-*Note: This is work in progress and the code will be published soon.* 
+![Equations for SEIR model](figs/SEIR.png)
+
+and we augment them by equations for patients requiring intensive care units (ICUs) [motivated by this press release](https://www.dgepi.de/de/aktuelles/article/aktualisierte-stellungnahme-der-deutschen-gesellschaft-fuer-epidemiologie-dgepi-zur-verbreitung-des-neuen-coronavirus-sars-cov-2/109)
+
+![Equations for ICU model](figs/ICU.png)
+
+## Code
+
+The [code](code/SEIR_uncertain.jl) is [Julia](https://julialang.org/) code. To run it, install all required packages. The main dependencies are [DifferenialEquations.jl](https://github.com/SciML/DifferentialEquations.jl) and [PolyChaos.jl](https://github.com/timueh/PolyChaos.jl).
+
+## Documentation
+
+This repository contains Julia code and a [documentation](doc/doc.pdf) to show how [polynomial chaos expansion](https://en.wikipedia.org/wiki/Polynomial_chaos) can help quantify uncertainties for the SEIR model.
