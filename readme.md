@@ -1,3 +1,6 @@
+[![](https://img.shields.io/badge/documentation-Latex-blue?style=flat)](doc/doc.pdf)
+[![](https://img.shields.io/badge/language-Julia-blue?style=flat)](https://julialang.org/)
+
 # Modeling pandemics subject to stochastic uncertainties -- A polynomial chaos approach
 
 The so-called [SEIR model](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907) is commonly used to model the outbreak of pandemics.
@@ -7,6 +10,20 @@ To account for this fact variants of the model exist, [see for instance here for
 As with every mathematical model there are parameters that need to be chosen.
 Usually, not precise figures exist.
 Hence, uncertainty quantification can play a vital role.
+
+## Results
+
+The code introduces uncertainty with respect to the basic reproduction number and the percentage of infected persons that require intensive care (see the [code](https://github.com/timueh/PandemicModeling/blob/f4da19ac8f859b7d5a74180123a80474a8c162d1/code/SEIR_uncertain.jl#L16) for precise numbers).
+Unfortunately, the numbers sketch a rather glim future (here for the German scenario).
+For instance, here is the number of infected patients over the course of one year.
+
+![Number of infected patients](figs/trajectory_I.png)
+
+And here the number of patients required intensive care
+
+![Number of infected patients](figs/trajectory_ICU.png)
+
+## Model
 
 The basic equations for the SEIR model are ([see for example this excellent reference](https://gabgoh.github.io/COVID/index.html))
 
@@ -18,7 +35,8 @@ and we augment them by equations for patients requiring intensive care units (IC
 
 ## Code
 
-The [code](code/SEIR_uncertain.jl) is [Julia](https://julialang.org/) code. To run it, install all required packages. The main dependencies are [DifferenialEquations.jl](https://github.com/SciML/DifferentialEquations.jl) and [PolyChaos.jl](https://github.com/timueh/PolyChaos.jl).
+The [code](code/SEIR_uncertain.jl) is written in [Julia](https://julialang.org/).
+To run it, install all required packages. The main dependencies are [DifferenialEquations.jl](https://github.com/SciML/DifferentialEquations.jl) and [PolyChaos.jl](https://github.com/timueh/PolyChaos.jl).
 
 ## Documentation
 
