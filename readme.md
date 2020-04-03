@@ -41,3 +41,17 @@ To run it, install all required packages. The main dependencies are [Differenial
 ## Documentation
 
 This repository contains Julia code and a [documentation](doc/doc.pdf) to show how [polynomial chaos expansion](https://en.wikipedia.org/wiki/Polynomial_chaos) can help quantify uncertainties for the SEIR model.
+
+## Resources (mostly Germany-related)
+
+| Resource | Explanation |
+| --- | --- |
+| [corona.rki.de](https://corona.rki.de) | Dashboard by Robert Koch Institut; goes down to communal level |
+| [corona.rki.de -- API](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0) | API for resource from above |
+| [RKI - Meldedaten](https://www.rki.de/DE/Content/Infekt/SurvStat/survstat_node.html) | Meldedaten nach Infektionsschutzgesetz, Robert Koch Institut |
+| [Epidemiologisches Bulletin](https://www.rki.de/DE/Content/Infekt/EpidBull/epid_bull_node.html) | by Robert Koch Institut |
+| [Epidemic calculator](https://gabgoh.github.io/COVID/index.html) | Epidemilogical simulation tool |
+| [CovidSim](http://covidsim.eu/) | Epidemilogical simulation tool (for Europe)|
+| [Risklayer Explorer](http://www.risklayer-explorer.com/) | This company grew out ouf [KIT](www.kit.edu); they still work together closely. Provides more than just information about Germany. |
+| [The Mathematics of Infectious Diseases](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907) | Great SIAM paper by Herbert W. Hethcote |
+| [Data against Covid](https://www.data-against-covid.org/) | Initiative to share and provide expertise |
