@@ -11,6 +11,22 @@ As with every mathematical model there are parameters that need to be chosen.
 Usually, not precise figures exist.
 Hence, uncertainty quantification can play a vital role.
 
+## General resources (mostly Germany-related)
+
+| Resource | Explanation |
+| --- | --- |
+| [corona.rki.de](https://corona.rki.de) | Dashboard by Robert Koch Institut; goes down to communal level |
+| [corona.rki.de -- API](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0) | API for resource from above |
+| [RKI - Meldedaten](https://www.rki.de/DE/Content/Infekt/SurvStat/survstat_node.html) | Meldedaten nach Infektionsschutzgesetz, Robert Koch Institut |
+| [Epidemiologisches Bulletin](https://www.rki.de/DE/Content/Infekt/EpidBull/epid_bull_node.html) | by Robert Koch Institut |
+| [Epidemic calculator](https://gabgoh.github.io/COVID/index.html) | Epidemilogical simulation tool |
+| [CovidSim](http://covidsim.eu/) | Epidemilogical simulation tool (for Europe)|
+| [Risklayer Explorer](http://www.risklayer-explorer.com/) | This company grew out ouf [KIT](www.kit.edu); they still work together closely. Provides more than just information about Germany. |
+| [The Mathematics of Infectious Diseases](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907) | Great SIAM paper by Herbert W. Hethcote |
+| [Data against Covid](https://www.data-against-covid.org/) | Initiative to share and provide expertise |
+| [Estimating $R_0$](https://stochastik-tu-ilmenau.github.io/COVID-19/germany) | Estimation of basic reproduction number for Germany |
+| [SIAM Resources for Covid-19](https://sinews.siam.org/Details-Page/mathematical-resources-to-help-understand-covid-19) | Excellent collection of online resources |
+
 ## Results
 
 The code introduces uncertainty with respect to the basic reproduction number and the percentage of infected persons that require intensive care (see the [code](https://github.com/timueh/PandemicModeling/blob/f4da19ac8f859b7d5a74180123a80474a8c162d1/code/SEIR_uncertain.jl#L16) for precise numbers).
@@ -42,16 +58,4 @@ To run it, install all required packages. The main dependencies are [Differenial
 
 This repository contains Julia code and a [documentation](doc/doc.pdf) to show how [polynomial chaos expansion](https://en.wikipedia.org/wiki/Polynomial_chaos) can help quantify uncertainties for the SEIR model.
 
-## Resources (mostly Germany-related)
 
-| Resource | Explanation |
-| --- | --- |
-| [corona.rki.de](https://corona.rki.de) | Dashboard by Robert Koch Institut; goes down to communal level |
-| [corona.rki.de -- API](https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0) | API for resource from above |
-| [RKI - Meldedaten](https://www.rki.de/DE/Content/Infekt/SurvStat/survstat_node.html) | Meldedaten nach Infektionsschutzgesetz, Robert Koch Institut |
-| [Epidemiologisches Bulletin](https://www.rki.de/DE/Content/Infekt/EpidBull/epid_bull_node.html) | by Robert Koch Institut |
-| [Epidemic calculator](https://gabgoh.github.io/COVID/index.html) | Epidemilogical simulation tool |
-| [CovidSim](http://covidsim.eu/) | Epidemilogical simulation tool (for Europe)|
-| [Risklayer Explorer](http://www.risklayer-explorer.com/) | This company grew out ouf [KIT](www.kit.edu); they still work together closely. Provides more than just information about Germany. |
-| [The Mathematics of Infectious Diseases](https://epubs.siam.org/doi/abs/10.1137/s0036144500371907) | Great SIAM paper by Herbert W. Hethcote |
-| [Data against Covid](https://www.data-against-covid.org/) | Initiative to share and provide expertise |
